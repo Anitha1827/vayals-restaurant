@@ -1,4 +1,5 @@
 import Hamburger from "hamburger-react";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -19,7 +20,7 @@ const Menubar = () => {
   return (
     <>
       <div className="lg:flex flex-row gap-[25%] bg-transparent items-center mt-[20px] ml-[3%] hidden">
-        <img
+        <Image
           src="https://vayals-restaurant.vercel.app/vayals.svg"
           alt="Logo"
           width={100}
@@ -36,7 +37,7 @@ const Menubar = () => {
 
       {/* mobile view*/}
       <div className="lg:hidden flex flex-row justify-between bg-transparent items-center mt-[20px] ml-[3%] ">
-        <img
+        <Image
           src="https://vayals-restaurant.vercel.app/vayals.svg"
           alt="Logo"
           width={100}

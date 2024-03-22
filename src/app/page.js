@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Marquee from "react-fast-marquee";
 import Menubar from "./Menubar";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -270,37 +271,43 @@ export default function Home() {
           </div>
           <div className="flex gap-10 hen justify-between w-[100%] absolute top-[200px]">
             <span className="ticka absolute left-[-400px] top-[150px] z-1">
-              <img
+              <Image
                 src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Fkebab.png&w=3840&q=75"
                 style={{ width: "400px" }}
                 className="ticka-body"
-              ></img>
+                width={400}
+                alt=""
+              />
             </span>
             <span className="absolute tandoori right-[-400px] top-[200px]">
-              <img
+              <Image
                 src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Ftandoori.png&w=3840&q=75"
                 style={{ width: "400px" }}
                 className="tandoori-body"
-              ></img>
+                alt=""
+              />
             </span>
             <span className="relative chicken">
-              <img
+              <Image
                 src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Frice.png&w=3840&q=75"
                 style={{ width: "400px", marginLeft: "-9%" }}
                 className="chicken-body"
-              ></img>
+                alt=""
+              />
             </span>
-            <img
+            <Image
               src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Fbiriyani.png&w=3840&q=75"
               style={{ marginRight: "-3%" }}
               className="relative biryani w-[200px] md:w-[400px]"
-            ></img>
+              alt=""
+            />
 
-            <img
+            <Image
               src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Fnaan.png&w=3840&q=75"
               style={{ width: "400px" }}
               className="absolute naan bottom-[-500px] right-[40px]"
-            ></img>
+              alt=""
+            />
 
             <div className="w-[100vw] flex justify-center items-center absolute top-[250px]">
               <div className="bg-custorange flex justify-center flex-col items-center text-[18px] rounded-[50%] w-[200px] h-[150px] uppercase flavor ">
