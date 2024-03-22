@@ -5,6 +5,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Marquee from "react-fast-marquee";
 import Menubar from "./Menubar";
 import Image from "next/image";
+import biryani from "@/../public/imges/biriyani.png";
+import kebab from "@/../public/imges/kebab.png";
+import naan from "@/../public/imges/naan.png";
+import rice from "@/../public/imges/rice.png";
+import tandoori from "@/../public/imges/tandoori.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -272,40 +277,44 @@ export default function Home() {
           <div className="flex gap-10 hen justify-between w-[100%] absolute top-[200px]">
             <span className="ticka absolute left-[-400px] top-[150px] z-1">
               <Image
-                src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Fkebab.png&w=3840&q=75"
-                style={{ width: "400px" }}
+                src={kebab}
                 className="ticka-body"
                 width={400}
+                height={200}
                 alt=""
               />
             </span>
             <span className="absolute tandoori right-[-400px] top-[200px]">
               <Image
-                src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Ftandoori.png&w=3840&q=75"
-                style={{ width: "400px" }}
+                src={tandoori}
+                width={400}
+                height={200}
                 className="tandoori-body"
                 alt=""
               />
             </span>
             <span className="relative chicken">
               <Image
-                src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Frice.png&w=3840&q=75"
-                style={{ width: "400px", marginLeft: "-9%" }}
-                className="chicken-body"
+                src={rice}
+                className="chicken-body ml-[-9%]"
+                width={400}
+                height={200}
                 alt=""
               />
             </span>
             <Image
-              src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Fbiriyani.png&w=3840&q=75"
-              style={{ marginRight: "-3%" }}
-              className="relative biryani w-[200px] md:w-[400px]"
+              src={biryani}
+              className="relative biryani w-[200px] md:w-[400px] mr-[-3%]"
               alt=""
+              width={400}
+              height={200}
             />
 
             <Image
-              src="https://vayals-restaurant.vercel.app/_next/image?url=%2FHome%2Fnaan.png&w=3840&q=75"
-              style={{ width: "400px" }}
+              src={naan}
               className="absolute naan bottom-[-500px] right-[40px]"
+              width={400}
+              height={200}
               alt=""
             />
 

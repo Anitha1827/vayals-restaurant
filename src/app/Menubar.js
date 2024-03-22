@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { FaFacebookSquare } from "react-icons/fa";
+import logo from "@/../public/imges/logo.svg";
 
 const Menubar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +21,7 @@ const Menubar = () => {
   return (
     <>
       <div className="lg:flex flex-row gap-[25%] bg-transparent items-center mt-[20px] ml-[3%] hidden">
-        <Image
-          src="https://vayals-restaurant.vercel.app/vayals.svg"
-          alt="Logo"
-          width={100}
-          height={100}
-        />
+        <Image src={logo} alt="Logo" width={100} height={100} />
         <div className="flex flex-row gap-5 uppercase font-bold text-custdarkgreen text-xl">
           <p>Home</p>
           <p>Menu</p>
