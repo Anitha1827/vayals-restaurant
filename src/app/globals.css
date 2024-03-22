@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.show {
+  display: none;
+}
+
+.container {
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.movingWord {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: moveLeft infinite linear 13s;
+}
+
+@keyframes moveLeft {
+  0% {
+    left: 100%; /* Start position */
+  }
+  100% {
+    left: -100%; /* End position */
+  }
+}
+.ease-custom {
+  transition: height 2s;
+  transition-timing-function: cubic-bezier(0.2, 0.7, 1, 0.1);
+}
+
+.flover {
+  transition: all 2s cubic-bezier(0, 1, 0, 1);
+}
